@@ -43,11 +43,11 @@ function Section1() {
 
       <section className="flex flex-col sm:flex-row-reverse my-auto mx-5">
         {/* image */}
-        <div className="w-[200px] sm:w-full self-start sm:self-center">
+        <div className="w-[200px] sm:flex-1 self-start sm:self-center">
           <img src="nx_wave_hero.png" alt="" className="" />
         </div>
 
-        <div className="my-auto  w-full">
+        <div className="my-auto flex-1">
           <div className="text-3xl font-semibold sm:text-6xl w-[400px] sm:w-full">
             <span className="font-extrabold">NX Wave.</span> The next-gen credit
             card for those who love rewards.

@@ -17,6 +17,7 @@ function Section2() {
         <Comp
           text="1% assured cashback on your spends.The more you spend, the more you earn."
           image="one_percent_cashback.png"
+          rev={true}
         />
         <Comp
           text="1% assured cashback on your spends.The more you spend, the more you earn."
@@ -32,9 +33,13 @@ function Section2() {
 }
 
 function Comp(props) {
-  const { image, text } = props;
+  const { image, text, rev } = props;
   return (
-    <div className="flex flex-col justify-center items-center md:flex-row-reverse">
+    <div
+      className={`flex flex-col justify-center items-center md:${
+        rev ? "flex-row" : "flex-row-reverse"
+      }`}
+    >
       <div>
         <img src={image} alt="" className="w-[250px] md:w-[450px] " />
       </div>
