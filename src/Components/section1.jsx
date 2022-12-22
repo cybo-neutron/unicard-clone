@@ -2,7 +2,7 @@ import React from "react";
 
 function Section1() {
   return (
-    <div className="flex flex-col h-full relative z-10">
+    <div className="flex flex-col h-screen relative z-10">
       <div className="bg-white h-full w-full absolute z-[-1]">
         <video autoPlay muted loop playsInline>
           <source src="nxt_wave_bg.mp4" type="video/mp4" />
