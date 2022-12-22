@@ -17,7 +17,7 @@ function Footer() {
 
       <div className="h-[1px] w-full bg-gradient-to-r from-blue-600 via-green-400 to-yellow-400 mt-5"></div>
 
-      <div className="flex justify-center gap-x-5 mx-10 mt-5 flex-wrap">
+      <div className="flex justify-center gap-x-5 mx-10 mt-5">
         <div>Instagram</div>
         <div>LinkedIn</div>
         <div>Twitter</div>
