@@ -7,9 +7,9 @@ function Section3() {
       <Banner />
 
       {/* Cards  */}
-      <div className="flex flex-col gap-y-5 md:flex-row">
+      <div className="flex flex-col gap-y-12 md:flex-row">
         <Card />
-        <Card />
+        <Card rev={true} />
         <Card />
       </div>
     </div>
@@ -30,9 +30,13 @@ function Banner() {
   );
 }
 
-function Card() {
+function Card(props) {
   return (
-    <div className="flex items-center mx-10 gap-x-5 md:flex-col">
+    <div
+      className={`flex ${
+        props.rev ? "flex-row-reverse" : "flex-row"
+      } items-center mx-10 gap-x-5 md:flex-col`}
+    >
       <div className="flex-1 ">
         <img src="whatsapp_bubble.webp" alt="" className=" w-[120px] mx-auto" />
       </div>
